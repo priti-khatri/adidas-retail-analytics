@@ -11,7 +11,7 @@ import os
 st.set_page_config(page_title="Adidas Product Intelligence", page_icon="👟", layout="wide")
 
 # data load from kaggle dataset
-@@st.cache_data
+@st.cache_data
 def load_kaggle_data():
     # set kaggle API credentials from secrets
     os.environ["KAGGLE_USERNAME"] = st.secrets["KAGGLE_USERNAME"]
