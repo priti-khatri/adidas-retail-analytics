@@ -1,35 +1,33 @@
-This Streamlit app is a fully automated Retail Analytics & ML Dashboard for Adidas USA using data from Kaggle. It integrates advanced Machine Learning techniques to:
+Overview
 
-Automatically fetch dataset from Kaggle.
+This Streamlit app is an interactive Product Analytics Dashboard for Adidas, built using Kaggle product metadata. It leverages Machine Learning (ML) models to provide insights into product segmentation, anomaly detection, recommendations, and more. The app is fully automated to download the dataset directly from Kaggle, analyze product information, and visualize key metrics.
 
-Analyze revenue, detect anomalies, and segment products.
+> Key Features:
 
-Forecast demand, measure promo effects, and recommend top-performing SKUs.
+Automated Data Download: Fetches dataset from Kaggle.
 
-> Key Features -:
+Product Segmentation: Groups products by price and ratings using KMeans.
 
-Automated Kaggle Data Loading: Fetches adidas_usa.csv dataset directly from Kaggle.
+Anomaly Detection: Flags unusual products using Isolation Forest.
 
-Anomaly Detection: Identifies suspicious spikes/drops in revenue.
+Product Recommendations: Recommends similar products based on price and category.
 
-Demand Forecasting: 30-day sales prediction using Random Forest.
+Interactive Visualizations: Provides interactive charts for price distribution, category counts, and more.
 
-Promo Effect Analysis: Measures the impact of promotions on revenue.
+Filters: Users can filter by category, brand, and color to explore the data.
 
-Product Recommendations: Recommends high-performing products based on revenue.
+>  Tech Stack
 
-Customer Segmentation: Clusters SKUs by revenue and quantity.
+Frontend:	Streamlit
 
-> Tech Stack -:
+Backend:	Python
 
-Frontend: Streamlit
+ML Models:	KMeans, Isolation Forest
 
-Backend: Python
+Data Source:	Kaggle
 
-ML Models: Isolation Forest, Random Forest, KMeans
+Data Processing:	Pandas, NumPy
 
-Data: Kaggle dataset (adidas_usa.csv)
-
-Visualization: Plotly
+Visualization:	Plotly Express
 
 > App link -: https://adidas-retail-analytics.streamlit.app/
