@@ -9,39 +9,34 @@ import os
 
 # css for mordern design
 st.markdown("""
-<style>
-.css-1d391kg .stSelectbox, 
-.css-1d391kg .stMultiselect, 
-.css-1d391kg .stTextInput {
-    background-color: #000 !important; /* black */
-    color: #fff !important;            /* white text */
-    border-radius: 5px;
-}
+    <style>
 
-.css-1d391kg .stSelectbox input::placeholder, 
-.css-1d391kg .stMultiselect input::placeholder {
-    color: #ccc !important;
-}
+    div[data-baseweb="select"] > div {
+        background-color: #000000 !important;    /* black */
+        color: white !important;
+        border-radius: 6px;
+    }
 
-.css-1d391kg .stSelectbox option:hover, 
-.css-1d391kg .stMultiselect option:hover {
-    background-color: #333 !important;
-    color: #fff !important;
-}
+   
+    div[data-baseweb="select"] span {
+        color: white !important;
+    }
 
-.stApp {
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-    color: #111;
-    font-family: 'Segoe UI', sans-serif;
-}
+    ul[role="listbox"] {
+        background-color: #000000 !important;
+        color: white !important;
+    }
 
-.stContainer {
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-</style>
+    li[role="option"]:hover {
+        background-color: #333333 !important;
+        color: white !important;
+    }
+
+    div[data-baseweb="select"] svg {
+        fill: white !important;
+    }
+
+    </style>
 """, unsafe_allow_html=True)
 
 
