@@ -9,96 +9,41 @@ import os
 
 # css for mordern design
 st.markdown("""
-    <style>
-    
-    /* GENERAL STYLES */
-    body {
-        background-color: #121212; /* Dark background for the body */
-        color: white;  /* White text color */
-        font-family: 'Segoe UI', sans-serif;
-    }
+<style>
+.css-1d391kg .stSelectbox, 
+.css-1d391kg .stMultiselect, 
+.css-1d391kg .stTextInput {
+    background-color: #000 !important; /* black */
+    color: #fff !important;            /* white text */
+    border-radius: 5px;
+}
 
-    h1, h2, h3, h4, h5, h6 {
-        color: white !important;
-    }
+.css-1d391kg .stSelectbox input::placeholder, 
+.css-1d391kg .stMultiselect input::placeholder {
+    color: #ccc !important;
+}
 
-    /* --- Sidebar Design (Glassmorphism) --- */
-    [data-testid="stSidebar"] {
-        background: rgba(255, 255, 255, 0.1); /* Glass effect */
-        backdrop-filter: blur(10px); /* Background blur effect */
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
+.css-1d391kg .stSelectbox option:hover, 
+.css-1d391kg .stMultiselect option:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
 
-    /* Sidebar title and image */
-    .css-1r2zvgr {
-        color: white !important;
-    }
+.stApp {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    color: #111;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    .stSidebar > div:first-child {
-        background: transparent !important;
-    }
-
-    /* --- Filters (Selectbox, Multiselect) --- */
-    div[data-baseweb="select"] > div {
-        background-color: rgba(255, 255, 255, 0.2) !important;  /* Transparent black */
-        color: white !important; /* White text */
-        border: 2px solid #0c5a94 !important; /* Neon blue border */
-        border-radius: 10px;
-        box-shadow: 0 0 5px rgba(12, 90, 148, 0.8); /* Neon blue glow */
-    }
-
-    /* Selected value text color */
-    div[data-baseweb="select"] span {
-        color: white !important;
-    }
-
-    /* Dropdown background and hover */
-    ul[role="listbox"] {
-        background-color: rgba(0, 0, 0, 0.6) !important; /* Darker dropdown */
-        color: white !important;
-    }
-
-    li[role="option"]:hover {
-        background-color: #0c5a94 !important;  /* Neon blue hover */
-        color: white !important;
-    }
-
-    /* Arrow icon color */
-    div[data-baseweb="select"] svg {
-        fill: white !important;
-    }
-
-    /* --- Sidebar Filter Button Styles --- */
-    .stButton > button {
-        background-color: #0c5a94 !important;  /* Neon blue background */
-        color: white !important;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(12, 90, 148, 0.8); /* Neon blue glow */
-        border: 2px solid #0c5a94;
-        padding: 0.5rem;
-        font-weight: bold;
-    }
-
-    .stButton > button:hover {
-        background-color: #073c56 !important;  /* Darker blue for hover */
-        box-shadow: 0 0 15px rgba(12, 90, 148, 0.8);
-    }
-
-    /* --- Title Styling --- */
-    h1, h2, h3 {
-        font-family: 'Segoe UI', sans-serif;
-        font-weight: bold;
-        color: #ffffff !important;
-    }
-
-    /* --- Page content background --- */
-    .stApp {
-        background: #121212 !important;
-    }
-
-    </style>
+.stContainer {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+</style>
 """, unsafe_allow_html=True)
+
 
 # config
 st.set_page_config(page_title="Adidas Product Intelligence", page_icon="👟", layout="wide")
